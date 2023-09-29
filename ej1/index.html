@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M6 - Ej1</title>
+    <style>
+      input {
+        margin-top: 10px;
+        width: 50px;
+      }
+      label {
+        display: inline;
+      }
+      button {
+        margin-top: 10px;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>M6 UF1</h1>
+    <h2>Ejercicio 1 - Calculadora básica</h2>
+    <p>
+      Crear una aplicación con dos inputs numéricos con valor por defecto = 0, y
+      cuatro botones para sumar, restar, multiplicar y dividir
+    </p>
+    <ul>
+      <li>
+        Al pulsar el botón correspondiente debe capturar los datos de los dos
+        inputs y mostrar por consola el resultado de operar con los números
+        introducidos.
+      </li>
+      <li>Debe insertar (en el input de salida) el resultado</li>
+    </ul>
+
+    <div>
+      <form id="calculadora">
+        <label for="num1">Número 1:</label>
+        <input type="number" id="num1" value="0" />
+        <br />
+        <label for="num2">Número 2:</label>
+        <input type="number" id="num2" value="0" />
+        <div class="botones">
+          <button id="botonSumar">+</button>
+          <button id="botonRestar">-</button>
+          <button id="botonMultiplicar">*</button>
+          <button id="botonDividir">/</button>
+        </div>
+        <hr />
+        <div>
+          <label for="inputResultado">Resultado</label>
+          <input type="text" id="inputResultado" value="0" />
+        </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
