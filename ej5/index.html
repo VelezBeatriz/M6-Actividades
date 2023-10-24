@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrápame</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .casillas {
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .casilla {
+            width: 30px;
+            height: 30px;
+            border: 1px solid white;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ficha {
+            border: 1px solid;
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+        }
+
+        .jugador1 {
+            background-color: red;
+        }
+
+        .jugador2 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Atrápame si puedes</h1>
+        <div class="tablero d-flex border">
+            <div id="casillas1" class="casillas flex flex-column bg-success">
+                <div id="c20" class="casilla"></div>
+                <div id="c19" class="casilla"></div>
+                <div id="c18" class="casilla"></div>
+                <div id="c17" class="casilla"></div>
+                <div id="c16" class="casilla"></div>
+                <div id="c15" class="casilla"></div>
+                <div id="c14" class="casilla"></div>
+                <div id="c13" class="casilla"></div>
+                <div id="c12" class="casilla"></div>
+                <div id="c11" class="casilla"></div>
+                <div id="c10" class="casilla"></div>
+                <div id="c9" class="casilla"></div>
+                <div id="c8" class="casilla"></div>
+                <div id="c7" class="casilla"></div>
+                <div id="c6" class="casilla"></div>
+                <div id="c5" class="casilla"></div>
+                <div id="c4" class="casilla"></div>
+                <div id="c3" class="casilla"></div>
+                <div id="c2" class="casilla"></div>
+                <div id="c1" class="casilla">
+                    <div class="ficha jugador1"></div>
+                </div>
+                <div id="dado1">
+                    <button id="jugador1" class="btn btn-light m-2 small">Jugador 1</button>
+                </div>
+            </div>
+            <div id="casillas2" class="casillas flex flex-column bg-primary">
+                <div id="c20" class="casilla"></div>
+                <div id="c19" class="casilla"></div>
+                <div id="c18" class="casilla"></div>
+                <div id="c17" class="casilla"></div>
+                <div id="c16" class="casilla"></div>
+                <div id="c15" class="casilla"></div>
+                <div id="c14" class="casilla"></div>
+                <div id="c13" class="casilla"></div>
+                <div id="c12" class="casilla"></div>
+                <div id="c11" class="casilla"></div>
+                <div id="c10" class="casilla"></div>
+                <div id="c9" class="casilla"></div>
+                <div id="c8" class="casilla"></div>
+                <div id="c7" class="casilla"></div>
+                <div id="c6" class="casilla"></div>
+                <div id="c5" class="casilla"></div>
+                <div id="c4" class="casilla"></div>
+                <div id="c3" class="casilla"></div>
+                <div id="c2" class="casilla"></div>
+                <div id="c1" class="casilla">
+                    <div class="ficha jugador2"></div>
+                </div>
+                <div id="dado1">
+                    <button id="jugador2" class="btn btn-light m-2 small">Jugador 2</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
