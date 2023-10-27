@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahorcado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .casilla{
+      width: 60px;
+      height: 80px;
+      border: 1px solid;
+      background-color: white;
+      margin: 10px;
+      font-size: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="mt-5 text-center">Ejercicio 6 - Ahorcado</h1>
+  <p class="text-center">Este es el famoso juego del ahorcado</p>
+  
+  <!-- contenedor principal -->
+  <div class="container vh-100 d-flex flex-column align-items-center justify-content-center">
+    <!-- Ventana para introducir las palabras -->
+    <div id="ventanaIntroPalabra" class="p-5 border shadow" >
+      <input id="inputPalabra" type="text" class="form-control" placeholder="Cocodrilo">
+      <button id="btnIntroPalabra" class="btn btn-success w-100 mt-5">Introduce una palabra</button>
+    </div>
+
+    <!-- Ventana para preguntar si vuelve a jugar -->
+    <div id="ventanaPregunta" class="alert alert-success text-center d-none">
+      <h3 id="mensaje" class="alert"></h3>
+      <h2 class="mb-3">¿Quieres volver a jugar?</h2>
+      <button id="btnJugar" class="pregunta btn btn-success">Jugar</button>
+      <button id="btnCancelar" class="btn btn-danger">Cancelar</button>
+    </div>
+
+    <!-- Ventana con el juego -->
+    <div id="juego" class="row mt-5 d-none" >
+      <!-- Casillas -->
+      <div class="col-12">
+        <div id="casillas" class="d-flex bg-primary justify-content-center"></div>
+      </div>
+
+      <!-- Columna izquierda con la entrada de la letra -->
+      <div class="col-6" style="height:400px;">
+        <div id="ventanaLetra" class="border p-1 d-flex flex-column align-items-center bg-warning p-5 mt-5">
+          <input id="letra" type="text" maxlength="1" class="form-control fs-1 mt-4 w-25">
+          <button id="introLetra" class="btn btn-success w-100 mt-3">Introduce letra</button>
+        </div>
+      </div>
+
+      <!-- Columna derecha con el muñeco -->
+      <div class="col-6 mt-5 d-flex justify-content-center border" style="height:400px;">
+        <div id="ahorcado" class="d-flex flex-column justify-content-center align-items-center">
+          <div id="cabeza" class="text-center d-none" style="width: 270px;">
+            <img id="img1" src="img/cabeza.png" alt="">
+          </div>
+          <div class="d-flex">
+            <div id="brazoIzq" class="text-end d-none" style="width: 123px;">
+              <img id="img2" src="img/brazoIzq.png" alt="">
+            </div>
+            <div id="cuerpo" class="text-end d-none">
+              <img id="img3" src="img/cuerpo.png" alt="">
+            </div>
+            <div id="brazoDra" class="text-start d-none" style="width: 123px;">
+              <img id="img4" src="img/brazoDra.png" alt="">
+            </div>
+          </div>
+          <div class="d-flex">
+            <div id="piernaIzq" class="text-end d-none" style="width: 135px;">
+              <img id="img5" src="img/piernaIzq.png" alt="">
+            </div>
+            <div id="piernaDra" class="text-start d-none" style="width: 135px;">
+              <img id="img6" src="img/piernaDra.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+<script src="main.js"></script>
+ 
+</body>
+</html>
